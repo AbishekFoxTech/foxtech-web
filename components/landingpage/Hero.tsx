@@ -104,7 +104,7 @@ export default function Hero() {
 					<Image src="/img/harvard.png" alt="Harvard" width={120} height={40} />
 					<Image src="/img/berkeley.webp" alt="Berkeley" width={120} height={40} />
 					<Image src="/img/google.png" alt="Google Cloud" width={120} height={40} />
-					<Image src="/img/cambridge.png" alt="Cambridge" width={120} height={40} />
+					<Image src="/img/Cambridge.png" alt="Cambridge" width={120} height={40} />
 					<Image src="/img/columbia.png" alt="Columbia" width={120} height={40} />
 				</div>
 			</div>
