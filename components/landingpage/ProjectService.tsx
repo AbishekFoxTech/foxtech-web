@@ -15,7 +15,7 @@ type TabId = "mechanical" | "civil" | "IT";
 const content: Record<
   TabId,
   {
-    title: JSX.Element;
+title: React.ReactElement;
     description: string;
     points: string[];
     image: string;
