@@ -60,7 +60,7 @@ export default function Navbar() {
               ].map((item) => (
                 <Link
                   key={item}
-                  href="#"
+                  href="#mech"
                   className="
                     block px-5 py-2 text-[15px] rounded-md
                     hover:bg-purple-50 hover:text-purple-700 hover:border-l-4 hover:border-purple-600 transition
@@ -72,16 +72,16 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link href="#" className="hover:text-purple-700 transition">
+          <Link href="#project-services" className="hover:text-purple-700 transition">
             Project Services
           </Link>
-          <Link href="#" className="hover:text-purple-700 transition">
+          <Link href="#aboutus" className="hover:text-purple-700 transition">
             About Us
           </Link>
-          <Link href="#" className="hover:text-purple-700 transition">
+          <Link href="#success" className="hover:text-purple-700 transition">
             Success Stories
           </Link>
-          <Link href="#" className="hover:text-purple-700 transition">
+          <Link href="#contact" className="hover:text-purple-700 transition">
             Contact
           </Link>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<footer className="bg-[#0B0516] text-gray-300 font-inter p-6">
+		<footer className="bg-[#0B0516] text-gray-300 font-inter p-6" id="contact">
 			<div className="container max-w-7xl mx-auto px-6 md:px-20 py-14">
 				{/* Top Section */}
 				<div className="flex flex-col space-y-6 md:flex-row md:items-center md:space-y-0 md:space-x-20 border-b border-gray-800 pb-6 mb-12 justify-between">

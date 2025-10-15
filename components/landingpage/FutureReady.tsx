@@ -252,7 +252,7 @@ export default function FutureReady() {
   const visibleCards = courses[activeTab] || [];
 
   return (
-    <section className="font-inter tracking-wide m-2">
+    <section className="font-inter tracking-wide m-2 pt-15" id="mech">
       <div className="max-w-6xl mx-auto ">
         {/* Heading + Description */}
         <div className="bg-white max-w-6xl mx-auto p-4">
@@ -325,7 +325,7 @@ function CourseCard({ course, index }: { course: any; index: number }) {
 
 
   return (
-    <div className="bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col h-full">
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col h-full" >
       {/* Image */}
       
       <div className="p-3">

@@ -56,7 +56,7 @@ const Shaping = () => {
   }, [hasAnimated, stats]);
 
   return (
-    <section className="w-full px-6 py-16 bg-white p-4">
+    <section className="w-full px-6 py-16 bg-white p-4" id="aboutus">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Left Content */}
         <div>

@@ -94,7 +94,7 @@ export default function ProjectService() {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-between px-4 sm:px-6 md:px-10 py-6 bg-[#030030] text-white overflow-hidden h-[95vh] min-h-[520px]">
+    <section className="relative flex flex-col items-center justify-between px-4 sm:px-6 md:px-10 py-6 bg-[#030030] text-white overflow-hidden h-[95vh] min-h-[520px] pt-20"  id="project-services">
       {/* === Glows === */}
       <div
         className="absolute top-0 bottom-0 left-0 w-[250px] sm:w-[300px] md:w-[400px] pointer-events-none"

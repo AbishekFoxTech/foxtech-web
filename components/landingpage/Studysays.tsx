@@ -45,7 +45,7 @@ const resources = [
 
 const Study = () => {
   return (
-    <section className="py-20 bg-white p-4">
+    <section className="py-20 bg-white p-4" id="success">
       <div className="max-w-6xl mx-auto ">
         {/* 🎓 Section 1: Student Testimonials */}
         <h2 className="text-3xl md:text-4xl font-bold text-[#190653] mb-8">
