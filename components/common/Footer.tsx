@@ -34,7 +34,10 @@ export default function Footer() {
 								fontSize: "20px", // custom font size
 							}}
 						>
-							+91 7025080044
+						
+
+
+						+91 9487552280
 						</div>
 
 
@@ -61,7 +64,7 @@ export default function Footer() {
 						" style={{
 
 								fontSize: "20px", // custom font size
-							}}> foxtech077@gmail.org</div>
+							}}> manage@foxtechsolutions.com</div>
 					</div>
 				</div>
 
