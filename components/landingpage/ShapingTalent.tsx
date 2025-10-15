@@ -112,12 +112,12 @@ const Shaping = () => {
       {/* Bottom Stats */}
       <div
         ref={sectionRef}
-        className="mt-16 flex flex-wrap justify-between text-center max-w-6xl mx-auto "
+        className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-6xl mx-auto"
       >
         {stats.map((item, index) => (
           <div
             key={index}
-            className="p-[1px] rounded-[10px] max-w-[200px] flex-1"
+            className="p-[1px] rounded-[10px] w-full sm:w-auto"
             style={{
               background:
                 "linear-gradient(169.58deg, #C3AFFF 2.78%, #FFFFFF 113.31%)",
