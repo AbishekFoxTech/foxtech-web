@@ -5,16 +5,18 @@ import Link from "next/link";
 
 export default function Hero() {
 	return (
-		<section className="relative bg-[#fffceb] overflow-hidden w-full pt-25">
+		<section className="relative bg-[#FFFDF2] overflow-hidden w-full lg:pt-35">
 			{/* === Hero Container === */}
 			<div className="containerss overflow-hidden">
-				<div className="max-w-6xl mx-auto relative z-30 flex flex-col-reverse lg:flex-row items-center">
-					
+				<div className="max-w-[66rem] mx-auto relative z-30 flex flex-col-reverse lg:flex-row items-center">
+
 					{/* === Text Content (Left) === */}
 					<div className="flex-1 text-center lg:text-left pb-10">
-						<h1 className="text-6xl md:text-5xl font-extrabold text-[#1b0736] leading-tight">
-							Learn. Build. Lead <br /> with Foxtech
+						<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-[#1b0736]  tracking-tighter">
+							Learn. <span>Build.</span> Lead
+							<br /> with Foxtech
 						</h1>
+
 						<p className="mt-5 text-lg text-gray-700 max-w-xl mx-auto lg:mx-0">
 							Industry-focused training and real-world  <br />project execution under one roof.
 						</p>
@@ -22,13 +24,17 @@ export default function Hero() {
 						<div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
 							<Link
 								href="#"
-								className="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white rounded-md shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5"
+								className="px-8 py-4 text-white rounded-md shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5"
+								style={{
+									background: "linear-gradient(291.92deg, #3200FF -8.85%, #9A00FF 87.4%)",
+								}}
 							>
 								Explore Courses
 							</Link>
+
 							<Link
 								href="#"
-								className="px-8 py-3 border-2 border-purple-700 text-purple-700 rounded-md hover:bg-purple-700 hover:text-white transition transform hover:-translate-y-0.5"
+								className="px-8 py-4 border-2 border-purple-700 text-purple-700 rounded-md hover:bg-purple-700 hover:text-white transition transform hover:-translate-y-0.5"
 							>
 								View Our Projects
 							</Link>
@@ -37,14 +43,14 @@ export default function Hero() {
 
 					{/* === Hero Image Side (Right) === */}
 					<div className="flex-1 flex justify-center items-center relative mt-12 md:mt-16 lg:mt-20">
-						
+
 						{/* ✅ Background Vector */}
 						<Image
 							src="/vector-bg.png"
 							alt="Background Vector"
 							width={500}
 							height={900}
-							className="absolute -z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[70%] md:w-[65%] lg:w-[60%] opacity-90"
+							className="absolute -z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[70%] md:w-[65%] lg:w-[90%] opacity-90"
 							priority
 						/>
 
@@ -92,7 +98,7 @@ export default function Hero() {
 
 			{/* === Partners Section === */}
 			<div className="text-center bg-white w-full py-16">
-				<p className="text-gray-800 text-lg">
+				<p className="text-gray-800 text-[15px]">
 					We collaborate with 50+{" "}
 					<span className="text-purple-700 font-semibold">
 						leading universities and companies

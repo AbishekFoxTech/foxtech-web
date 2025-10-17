@@ -5,8 +5,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const tabs = [
-  { id: "mechanical", label: "Mechanical CAD" },
-  { id: "civil", label: "Civil Engineering" },
+  { id: "mechanical", label: "Mechanical" },
+  { id: "civil", label: "Civil" },
   { id: "IT", label: "IT & Technology" },
 ];
 
@@ -46,7 +46,7 @@ title: React.ReactElement;
       "Interior Design",
       "Project Planning",
     ],
-    image: "/images/image.png",
+    image: "/images/house.svg",
   },
   IT: {
     title: (
@@ -62,7 +62,7 @@ title: React.ReactElement;
       "API Development",
       "UI/UX Design",
     ],
-    image: "/images/Rectangle1.svg",
+    image: "/images/phone.svg",
   },
 };
 
@@ -128,10 +128,10 @@ export default function ProjectService() {
 
       {/* === Heading === */}
       <div className="text-center max-w-2xl relative z-10 px-4 mb-4 sm:mb-6">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold mb-2 leading-snug">
+        <h2 className="text-[35px] sm:text-[25px] md:text-[40px] font-bold mb-2 leading-tighter">
           Our Project Services
         </h2>
-        <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed">
+        <p className="text-[14px] sm:text-[14px] md:text-[15px] text-gray-300 leading-relaxed">
           From Mechanical CAD to Civil and IT — our programs are designed by
           industry experts and backed by real project experience.
         </p>
@@ -159,7 +159,7 @@ export default function ProjectService() {
       </div>
 
       {/* === Content === */}
-      <div className="relative w-full max-w-6xl flex flex-col lg:flex-row justify-between items-center gap-6 px-4 z-10 flex-1 overflow-hidden">
+      <div className="relative w-full max-w-[66rem] flex flex-col lg:flex-row justify-between items-center gap-6 px-4 z-10 flex-1 overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}

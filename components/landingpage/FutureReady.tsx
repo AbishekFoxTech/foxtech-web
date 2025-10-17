@@ -5,17 +5,17 @@ import Image from "next/image";
 import { FaClock, FaLayerGroup } from "react-icons/fa"; // icons for duration/modules
 
 const categories = [
-  "Mechanical CAD",
-  "Civil Engineering",
-  "Electrical Engineering",
+  "Mechanical",
+  "Civil",
+  "Electrical",
   "IT & Technology",
 ];
 const courses: Record<string, Array<any>> = {
-  "Mechanical CAD": [
+  "Mechanical": [
     {
       level: "Beginner to Advanced",
       levelColor: "bg-blue-100 text-blue-600",
-      title: "SolidWorks Essentials",
+      title: "SolidWorks",
       description:
         "Master SolidWorks, CATIA, 3D Modeling & Simulation for real projects.",
       duration: "6 Months",
@@ -71,7 +71,7 @@ const courses: Record<string, Array<any>> = {
     },
   ],
 
-  "Civil Engineering": [
+  "Civil": [
     {
       level: "Beginner",
       levelColor: "bg-blue-100 text-blue-600",
@@ -129,7 +129,7 @@ const courses: Record<string, Array<any>> = {
     },
   ],
 
-  "Electrical Engineering": [
+  "Electrical": [
     {
       level: "Beginner",
       levelColor: "bg-blue-100 text-blue-600",
@@ -248,18 +248,18 @@ const courses: Record<string, Array<any>> = {
 
 
 export default function FutureReady() {
-  const [activeTab, setActiveTab] = useState("Mechanical CAD");
+  const [activeTab, setActiveTab] = useState("Mechanical");
   const visibleCards = courses[activeTab] || [];
 
   return (
     <section className="font-inter tracking-wide m-2 pt-15" id="mech">
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-[66rem] mx-auto ">
         {/* Heading + Description */}
         <div className="bg-white max-w-6xl mx-auto p-4">
-          <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-[40px] font-bold text-gray-900 tracking-tighter">
             Future-Ready Courses
           </h2>
-          <p className="mt-4 mb-12 text-gray-600 max-w-3xl text-sm leading-relaxed">
+          <p className="mt-1 mb-12 text-gray-600 max-w-3xl text-sm leading-relaxed">
             From Mechanical CAD to Civil, Electrical, and IT — our programs are
             designed by industry experts and backed by real project experience.
           </p>
@@ -270,11 +270,10 @@ export default function FutureReady() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`pb-3 transition cursor-pointer ${
-                  activeTab === tab
-                    ? "border-b-2 border-purple-600 text-purple-600 font-semibold"
-                    : "text-gray-600 hover:text-purple-600"
-                }`}
+                className={`pb-3 transition cursor-pointer ${activeTab === tab
+                    ? "border-b-2 border-purple-600  font-semibold"
+                    : "text-gray-600"
+                  }`}
               >
                 {tab}
               </button>
@@ -285,21 +284,37 @@ export default function FutureReady() {
 
       {/* Beige section full width */}
       <div className="bg-[#F5F4EC] w-full">
-        <div className="max-w-6xl mx-auto  pb-12 pt-10">
+        <div className="max-w-[66rem] mx-auto  pb-12 pt-10">
           {/* Horizontal scroll carousel */}
-          <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-4 max-w-6xl mx-auto ">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-4 max-w-[66rem] mx-auto ">
             {visibleCards.map((course, idx) => (
-              <div key={idx} className="flex-shrink-0 w-70">
+              <div key={idx} className="flex-shrink-0 w-64">
                 <CourseCard course={course} index={idx} />
               </div>
             ))}
           </div>
 
           {/* Browse button */}
-          <div className="mt-8 max-w-6xl mx-auto ">
-            <button className="px-5 py-3 rounded-lg border border-purple-600 text-purple-600  text-sm hover:bg-purple-50">
+          <div className="mt-8 max-w-[66rem] mx-auto ">
+            <button
+              className="px-5 py-3 rounded-lg border border-transparent text-[13px] font-[600] text-[#3200FF] transition-all duration-300 hover:text-white"
+              style={{
+                border: "1px solid #3200FF",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(291.92deg, #3200FF -8.85%, #9A00FF 87.4%)";
+                e.currentTarget.style.color = "white";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.color = "#3200FF";
+                e.currentTarget.style.border = "1px solid #3200FF";
+              }}
+            >
               Browse All Training Programs
             </button>
+
           </div>
         </div>
       </div>
@@ -321,15 +336,15 @@ export default function FutureReady() {
 function CourseCard({ course, index }: { course: any; index: number }) {
   // Cycle images: Rectangle1.png → Rectangle4.png
   const imageNumber = (index % 4) + 1;
- const imageSrc = course.image || `/images/Rectangle${(index % 4) + 1}.png`;
+  const imageSrc = course.image || `/images/Rectangle${(index % 4) + 1}.png`;
 
 
   return (
-    <div className="bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col h-full" >
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col h-[60vh]" >
       {/* Image */}
-      
-      <div className="p-3">
-        <div className="relative w-full h-44 rounded-lg overflow-hidden bg-gray-100">
+
+      <div className="p-2">
+        <div className="relative w-full h-28 rounded-lg overflow-hidden bg-gray-100">
           <Image src={imageSrc} alt={course.title} fill className="object-cover" />
           <span
             className={`absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-medium ${course.levelColor}`}
@@ -341,7 +356,7 @@ function CourseCard({ course, index }: { course: any; index: number }) {
 
       {/* Content */}
       <div className="px-2 pb-6 flex flex-col flex-grow">
-        <h3 className="text-lg font-bold mb-3">{course.title}</h3>
+        <h3 className="text-[14px] font-bold mb-3">{course.title}</h3>
         {/* Description with 2-line ellipsis */}
         <p className="text-gray-700 text-sm mb-4 leading-relaxed line-clamp-2 overflow-hidden">
           {course.description}

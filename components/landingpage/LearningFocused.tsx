@@ -22,9 +22,9 @@ const features = [
 const Learn = () => {
   return (
     <section className="py-20 bg-[#FAF9F6] p-4">
-      <div className="max-w-6xl mx-auto  text-center">
+      <div className="max-w-[66rem] mx-auto  text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2D1B69] mb-14 text-left">
+        <h2 className="text-[40px] font-bold text-gray-900 tracking-tighter text-left pb-10">
           Learning focused on your goals
         </h2>
 
@@ -33,10 +33,10 @@ const Learn = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-white p-12 rounded-[10px] shadow-sm hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex justify-center mb-6">
-                <div className="w-24 h-24 relative">
+                <div className="w-30 h-30 relative bg-[#FAF9F6] rounded-[100px] mb-5">
                   <Image
                     src={feature.icon}
                     alt={feature.title}

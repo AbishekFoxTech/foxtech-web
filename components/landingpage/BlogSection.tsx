@@ -43,15 +43,28 @@ export default function BlogSection() {
 
   return (
     <section className="font-inter tracking-wide p-4">
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-[66rem] mx-auto ">
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+          <h2 className="text-[40px] font-bold text-gray-900 tracking-tighter">
             Latest from Our Blog
           </h2>
-          <button className="px-4 py-2 rounded-lg border border-purple-600 text-purple-600 text-sm md:text-base font-semibold hover:bg-purple-50">
-            Read Our Complete Blog
-          </button>
+           <button
+              className="mt-8 border border-[3200FF] text-[3200FF]  px-4  py-2 rounded-[10px] transition-all duration-300"
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background =
+                  "linear-gradient(291.92deg, #3200FF -8.85%, #9A00FF 87.4%)";
+                e.currentTarget.style.borderColor = "transparent";
+                e.currentTarget.style.color = "white";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "transparent";
+                e.currentTarget.style.borderColor = "black";
+                e.currentTarget.style.color = "black";
+              }}
+            >
+              View Projects
+            </button>
         </div>
 
         {/* Layout */}

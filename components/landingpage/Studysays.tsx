@@ -46,9 +46,9 @@ const resources = [
 const Study = () => {
   return (
     <section className="py-20 bg-white p-4" id="success">
-      <div className="max-w-6xl mx-auto ">
+      <div className="max-w-[66rem] mx-auto ">
         {/* 🎓 Section 1: Student Testimonials */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#190653] mb-8">
+        <h2 className="text-[40px] font-bold text-gray-900 tracking-tighter mb-10">
           What Our Students Say
         </h2>
 
@@ -63,8 +63,8 @@ const Study = () => {
                 src={t.image}
                 alt={t.name}
                 width={400}
-                height={250}
-                className="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-105"
+                height={230}
+                className="w-full h-62 object-cover transition-transform duration-300 group-hover:scale-105"
               />
 
               {/* ▶ Pure White Play Button (SVG) */}
@@ -102,11 +102,11 @@ const Study = () => {
         </div>
 
         {/* 📘 Section 2: Stay Ahead of the Curve */}
-        <h2 className="text-3xl md:text-4xl font-bold text-[#190653] mb-4">
+        <h2 className="text-[40px] font-bold text-gray-900 tracking-tighter">
           Stay Ahead of the Curve
         </h2>
         <p className="text-gray-600 mb-12 max-w-2xl">
-          Get free tutorials, industry tips, and insights from our experts. Stay
+          Get free tutorials, industry tips, and insights from our experts. <br /> Stay
           updated with the latest in engineering and technology.
         </p>
 
@@ -125,10 +125,10 @@ const Study = () => {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-[#190653] mb-3">
+              <h3 className="text-xl font-semibold text-[#190653] mb-1">
                 {r.title}
               </h3>
-              <p className="text-gray-600 mb-4">{r.description}</p>
+              <p className="text-gray-800 mb-4 tracking-tighter text-[15px]">{r.description}</p>
               <span className="text-sm font-medium text-[#171717] bg-[#FFF6DF] px-3 py-1 rounded-[5px] inline-block">
                 {r.label}
               </span>

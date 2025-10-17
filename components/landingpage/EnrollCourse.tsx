@@ -6,16 +6,18 @@ import Link from "next/link";
 export default function EnrollCourse() {
   return (
     <section className="relative w-full bg-white py-10 sm:py-16">
-      <div className="max-w-6xl mx-auto  items-center">
-        <div className="relative bg-gradient-to-r from-[#9A00FF] to-[#3200FF] text-white overflow-hidden rounded-xl shadow-xl flex flex-col lg:flex-row items-center justify-between px-6 sm:px-12 md:px-16 xl:px-24 pt-10">
+      <div className="max-w-[66rem] mx-auto  items-center pb-5">
+        <div className="relative bg-gradient-to-r from-[#9A00FF] to-[#3200FF] text-white overflow-hidden rounded-[5px] shadow-xl flex flex-col lg:flex-row items-center justify-between px-6 sm:px-12 md:px-16 xl:px-24 pt-10 pb-10">
           
           {/* === Left Content === */}
           <div className="w-full lg:w-1/2 text-center lg:text-left z-10">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+            <h1 className="text-[40px] sm:text-3xl md:text-4xl lg:text-[40px] font-bold tracking-tighter">
               Ready to Learn <br className="hidden sm:block" /> or Build with Us?
             </h1>
-            <p className="mt-4 text-base sm:text-lg text-white/90 max-w-lg mx-auto lg:mx-0">
-              Get in touch to start your journey with Fortech. Whether you want to enroll in a course or discuss a project, we're here to help.
+            <p className="mt-4 text-[18px] sm:text-[18px] text-white/90 max-w-lg mx-auto lg:mx-0">
+              Get in touch to start your journey with Fortech. <br />
+               Whether you want to enroll in a course or discuss a <br />
+                project, we're here to help.
             </p>
 
             {/* Buttons */}
