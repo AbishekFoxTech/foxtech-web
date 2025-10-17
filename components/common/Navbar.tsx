@@ -66,7 +66,7 @@ export default function Navbar() {
               className="
                 absolute left-0 mt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
                 transition-all duration-200 bg-white shadow-lg rounded-lg py-2 w-60 z-50 border border-gray-200
-              "
+              " 
             >
               {[
                 "MECHANICAL CAD",
@@ -76,11 +76,12 @@ export default function Navbar() {
               ].map((item) => (
                 <Link
                   key={item}
-                  href="#"
+                  href="#mech"
                   className="
                     block px-5 py-2 text-[15px] rounded-md
                     hover:bg-purple-50 hover:text-[#380DBD] hover:border-l-4 hover:border-[#380DBD] transition
                   "
+                  
                 >
                   {item}
                 </Link>
@@ -148,7 +149,7 @@ export default function Navbar() {
                 ].map((item) => (
                   <Link
                     key={item}
-                    href="#"
+                    href="#mech"
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:bg-purple-50 hover:text-[#380DBD] px-3 py-2 rounded-md transition border-l-4 border-transparent hover:border-[#380DBD]"
                   >
@@ -159,16 +160,16 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
+          <Link href="#project-services" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
             Project Services
           </Link>
-          <Link href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
+          <Link href="#aboutus" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
             About Us
           </Link>
-          <Link href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
+          <Link href="#success" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
             Success Stories
           </Link>
-          <Link href="#" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
+          <Link href="#contact" onClick={() => setIsMenuOpen(false)} className="hover:text-[#380DBD]">
             Contact
           </Link>
 
